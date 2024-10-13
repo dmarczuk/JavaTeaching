@@ -1,8 +1,6 @@
 package collections.map;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class MapClass {
 
@@ -20,10 +18,34 @@ public class MapClass {
     }
 
     public void addElementToMap(String name) {
-        Person person = new Person("FirstName", "LastName", 20);
+        Person person = new Person("Adam", "LastName", 20);
         firstMap.put(person.getFirstName(), person); // czy tak moze byc??
+        Person person2 = new Person("Adam", "bbb", 21);
+        firstMap.put(person.getFirstName(), person2);
+        // "ania"  (ania, Kowalska, 16)
+        // "piotek"
+        // ""
+        // "adam" -> Lista:  person (adam, LastName, 20), Person("Adam", "bbb", 21);
         //firstMap.put(person.getPesel, person);
         secondMap.put(person.getFirstName(), person);
+    }
+
+    private void findElement() {
+        List<Person> list = new LinkedList<>();
+        Person person = new Person("Adam", "LastName", 20);
+        Person person2 = new Person("Adam", "bbb", 21);
+        list.add(person);
+        list.add(person2);
+
+        Person person3 = new Person("Adam", "LastName", 20);
+        for (int i = 0; i < list.size(); i++) {
+            person = list.get(i);
+            if (person.equals(person3) == true) {
+
+            }
+        }
+
+
     }
 
     public void findElementFromMap(String name) {

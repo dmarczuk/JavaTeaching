@@ -41,6 +41,7 @@ public class Person {
     // czy wszystko jest ok w tej klasie?
 
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

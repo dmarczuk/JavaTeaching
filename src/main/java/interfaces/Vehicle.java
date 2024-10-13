@@ -9,4 +9,6 @@ public abstract class Vehicle {
     // w klasie abstakcyjne mozemy miec:
     // -> metody abstakcyjne
     // -> zwykle metody
+
+
 }
